@@ -13,7 +13,6 @@ const PRONUNCIATION_MAP = {
 };
 
 // Cache for loaded voices
-let voicesLoaded = false;
 let preferredVoice = null;
 
 // Load voices when available
@@ -21,7 +20,6 @@ if (synth) {
   const loadVoices = () => {
     const voices = synth.getVoices();
     if (voices.length > 0) {
-      voicesLoaded = true;
       // Prefer English voices
       preferredVoice = voices.find(voice => 
         voice.lang.startsWith('en-') && voice.name.includes('Google')

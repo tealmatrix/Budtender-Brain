@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { getComboMessage } from '../../utils/gameLogic';
 import { playSuccessSound, playErrorSound } from '../../utils/audio';
 import TerpeneName from '../TerpeneName';
@@ -9,32 +9,7 @@ const QuizView = ({ question, onCorrect, onWrong, onNext, onBack, streak, combo,
   const [options, setOptions] = useState([]);
   const comboMessage = getComboMessage(combo);
 
-  useEffect(() => {
-    generateOptions();
-    setSelectedAnswer(null);
-    setShowResult(false);
-  }, [question]);
-
-  const generateOptions = () => {
-    const correctAnswer = getCorrectAnswer();
-    const wrongAnswers = generateWrongAnswers();
-    
-    // Shuffle options
-    const allOptions = [
-      { text: correctAnswer, isCorrect: true },
-      ...wrongAnswers.map(text => ({ text, isCorrect: false }))
-    ];
-    
-    // Fisher-Yates shuffle
-    for (let i = allOptions.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [allOptions[i], allOptions[j]] = [allOptions[j], allOptions[i]];
-    }
-    
-    setOptions(allOptions);
-  };
-
-  const getCorrectAnswer = () => {
+  const getCorrectAnswer = useCallback(() => {
     const { data, type } = question;
     switch(type) {
       case 'aroma':
@@ -50,9 +25,9 @@ const QuizView = ({ question, onCorrect, onWrong, onNext, onBack, streak, combo,
       default:
         return data.aroma;
     }
-  };
+  }, [question]);
 
-  const generateWrongAnswers = () => {
+  const generateWrongAnswers = useCallback(() => {
     const { type, terpene } = question;
     const otherTerpenes = Object.entries(allTerpenes)
       .filter(([name]) => name !== terpene)
@@ -77,7 +52,32 @@ const QuizView = ({ question, onCorrect, onWrong, onNext, onBack, streak, combo,
           return data.aroma;
       }
     });
-  };
+  }, [question, allTerpenes]);
+
+  const generateOptions = useCallback(() => {
+    const correctAnswer = getCorrectAnswer();
+    const wrongAnswers = generateWrongAnswers();
+    
+    // Shuffle options
+    const allOptions = [
+      { text: correctAnswer, isCorrect: true },
+      ...wrongAnswers.map(text => ({ text, isCorrect: false }))
+    ];
+    
+    // Fisher-Yates shuffle
+    for (let i = allOptions.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [allOptions[i], allOptions[j]] = [allOptions[j], allOptions[i]];
+    }
+    
+    setOptions(allOptions);
+  }, [getCorrectAnswer, generateWrongAnswers]);
+
+  useEffect(() => {
+    generateOptions();
+    setSelectedAnswer(null);
+    setShowResult(false);
+  }, [generateOptions]);
 
   const handleSelectAnswer = (index) => {
     if (showResult) return; // Prevent changing after reveal
