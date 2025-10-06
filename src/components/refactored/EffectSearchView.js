@@ -61,16 +61,22 @@ const EffectSearchView = ({ terpenes, onBack }) => {
   const getStrainRecommendations = () => {
     const lowerQuery = searchQuery.toLowerCase();
     if (lowerQuery.includes('sleep') || lowerQuery.includes('evening')) {
-      return strainsByEffect['Sleep/Evening'] || [];
+      return { category: 'Sleep/Evening', strains: strainsByEffect['Sleep/Evening'] || [] };
     }
-    return [];
+    if (lowerQuery.includes('anxiety') || lowerQuery.includes('stress')) {
+      return { category: 'Anxiety/Stress', strains: strainsByEffect['Anxiety/Stress'] || [] };
+    }
+    return { category: null, strains: [] };
   };
 
-  const strainRecommendations = getStrainRecommendations();
+  const recommendationData = getStrainRecommendations();
+  const strainRecommendations = recommendationData.strains;
+  const recommendationCategory = recommendationData.category;
 
   // Debug logging
   console.log('Search Query:', searchQuery);
   console.log('Strain Recommendations:', strainRecommendations);
+  console.log('Category:', recommendationCategory);
   console.log('strainsByEffect data:', strainsByEffect);
 
   return (
@@ -186,7 +192,7 @@ const EffectSearchView = ({ terpenes, onBack }) => {
               alignItems: 'center',
               gap: '10px'
             }}>
-              🌿 Recommended Strains for Sleep/Evening:
+              🌿 Recommended Strains for {recommendationCategory}:
             </h3>
 
             <div style={{
@@ -248,6 +254,17 @@ const EffectSearchView = ({ terpenes, onBack }) => {
                   }}>
                     <strong>💡 Use:</strong> {strain.use}
                   </p>
+
+                  {strain.herbAnalogs && (
+                    <p style={{
+                      margin: '8px 0',
+                      fontSize: '0.9rem',
+                      fontStyle: 'italic',
+                      opacity: 0.9
+                    }}>
+                      <strong>🌿 Similar to:</strong> {strain.herbAnalogs}
+                    </p>
+                  )}
                 </div>
               ))}
             </div>

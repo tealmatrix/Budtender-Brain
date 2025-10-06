@@ -24,5 +24,28 @@
       "profile": "Lavender-herbal; great for unwinding",
       "use": "Evening wind-down"
     }
+  ],
+  "Anxiety/Stress": [
+    {
+      "name": "Organic Zest PR – Sweetgrass (3 × 0.5g)",
+      "dominantTerps": ["Limonene", "Linalool", "Caryophyllene"],
+      "profile": "Citrus calm with lavender-like soothing and body relax",
+      "use": "Calming anxiety with mood lift; 'citrus calm' combo",
+      "herbAnalogs": "Lavender, Lemon balm, Coriander"
+    },
+    {
+      "name": "Pacific OG PR – Tantalus (3 × 0.5g)",
+      "dominantTerps": ["Limonene", "Linalool", "Myrcene"],
+      "profile": "Balanced calm with mood lift to counter overthinking",
+      "use": "Soothing + mellow relaxation; 'balanced calm' combo",
+      "herbAnalogs": "Lavender, Hops, Lemongrass"
+    },
+    {
+      "name": "RS11 PR – Quad Farmers (5 × 0.5g)",
+      "dominantTerps": ["Pinene", "Myrcene"],
+      "profile": "Sweet, fruity, candy with earth & pine tones for clarity + body calm",
+      "use": "Pine calm for mental clarity and relaxation; 'pine calm' combo",
+      "herbAnalogs": "Rosemary, Hops, Thyme"
+    }
   ]
 }
