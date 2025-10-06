@@ -68,6 +68,11 @@ const EffectSearchView = ({ terpenes, onBack }) => {
 
   const strainRecommendations = getStrainRecommendations();
 
+  // Debug logging
+  console.log('Search Query:', searchQuery);
+  console.log('Strain Recommendations:', strainRecommendations);
+  console.log('strainsByEffect data:', strainsByEffect);
+
   return (
     <div>
       {/* Back Button */}
