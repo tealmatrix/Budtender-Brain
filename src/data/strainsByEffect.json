@@ -1,0 +1,28 @@
+{
+  "Sleep/Evening": [
+    {
+      "name": "Sweetgrass Organic – 3.5g Flower",
+      "dominantTerps": ["Myrcene", "Caryophyllene", "Pinene"],
+      "profile": "Earthy, herbal; smooth body feel",
+      "use": "Nighttime relaxation"
+    },
+    {
+      "name": "LowKey by MTL – 7g (Indica)",
+      "dominantTerps": ["Bisabolol", "Caryophyllene", "Limonene"],
+      "profile": "Sweet and floral with grounding spice",
+      "use": "Mellow body + anxiety relief before bed"
+    },
+    {
+      "name": "Uncle Bob – Day Trippin PR (ironically chill at night)",
+      "dominantTerps": ["Myrcene", "Caryophyllene", "Farnesene"],
+      "profile": "Sweet-earthy; calm body; low head race",
+      "use": "Nighttime relaxation"
+    },
+    {
+      "name": "BC Doobies – Tokyo Sunset PR",
+      "dominantTerps": ["Linalool", "Caryophyllene", "Limonene"],
+      "profile": "Lavender-herbal; great for unwinding",
+      "use": "Evening wind-down"
+    }
+  ]
+}

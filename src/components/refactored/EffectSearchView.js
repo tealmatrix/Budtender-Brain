@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import strainsByEffect from '../../data/strainsByEffect.json';
 
 const EffectSearchView = ({ terpenes, onBack }) => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -55,6 +56,17 @@ const EffectSearchView = ({ terpenes, onBack }) => {
   };
 
   const results = searchTerpenes(searchQuery);
+
+  // Check if we should show strain recommendations
+  const getStrainRecommendations = () => {
+    const lowerQuery = searchQuery.toLowerCase();
+    if (lowerQuery.includes('sleep') || lowerQuery.includes('evening')) {
+      return strainsByEffect['Sleep/Evening'] || [];
+    }
+    return [];
+  };
+
+  const strainRecommendations = getStrainRecommendations();
 
   return (
     <div>
@@ -158,6 +170,85 @@ const EffectSearchView = ({ terpenes, onBack }) => {
           ))}
         </div>
 
+        {/* Strain Recommendations */}
+        {searchQuery && strainRecommendations.length > 0 && (
+          <div style={{ marginBottom: '40px' }}>
+            <h3 style={{
+              color: '#667eea',
+              marginBottom: '20px',
+              fontSize: '1.8rem',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '10px'
+            }}>
+              🌿 Recommended Strains for Sleep/Evening:
+            </h3>
+
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+              gap: '20px',
+              marginBottom: '20px'
+            }}>
+              {strainRecommendations.map((strain, index) => (
+                <div
+                  key={index}
+                  style={{
+                    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                    padding: '24px',
+                    borderRadius: '16px',
+                    color: 'white',
+                    boxShadow: '0 4px 12px rgba(0,0,0,0.2)',
+                    transition: 'transform 0.2s, box-shadow 0.2s'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = 'translateY(-5px)';
+                    e.currentTarget.style.boxShadow = '0 8px 24px rgba(0,0,0,0.3)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = 'translateY(0)';
+                    e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.2)';
+                  }}
+                >
+                  <h4 style={{
+                    fontSize: '1.3rem',
+                    marginBottom: '12px',
+                    fontWeight: 'bold'
+                  }}>
+                    {strain.name}
+                  </h4>
+
+                  <div style={{
+                    background: 'rgba(255,255,255,0.2)',
+                    padding: '10px',
+                    borderRadius: '8px',
+                    marginBottom: '12px'
+                  }}>
+                    <p style={{ margin: 0, fontSize: '0.9rem' }}>
+                      <strong>🌱 Dominant Terpenes:</strong> {strain.dominantTerps.join(', ')}
+                    </p>
+                  </div>
+
+                  <p style={{ margin: '8px 0', fontSize: '0.95rem', lineHeight: '1.5' }}>
+                    <strong>Profile:</strong> {strain.profile}
+                  </p>
+
+                  <p style={{
+                    margin: '8px 0',
+                    fontSize: '0.95rem',
+                    background: 'rgba(255,255,255,0.2)',
+                    padding: '8px',
+                    borderRadius: '6px',
+                    lineHeight: '1.5'
+                  }}>
+                    <strong>💡 Use:</strong> {strain.use}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
         {/* Results */}
         {searchQuery && (
           <div>
@@ -168,7 +259,9 @@ const EffectSearchView = ({ terpenes, onBack }) => {
             }}>
               {results.length > 0 
                 ? `Found ${results.length} terpene${results.length !== 1 ? 's' : ''}:`
-                : 'No terpenes found. Try a different search term.'}
+                : strainRecommendations.length > 0 
+                  ? 'Terpene Information:'
+                  : 'No terpenes found. Try a different search term.'}
             </h3>
 
             <div style={{
