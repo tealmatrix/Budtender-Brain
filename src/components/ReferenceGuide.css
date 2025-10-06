@@ -1,0 +1,81 @@
+.reference-guide {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  margin-top: 30px;
+}
+
+.reference-guide h2 {
+  color: #667eea;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+.reference-content {
+  margin-bottom: 30px;
+}
+
+.terpene-card {
+  background: #f8f9fa;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 10px;
+  border-left: 5px solid #667eea;
+  transition: transform 0.2s;
+}
+
+.terpene-card:hover {
+  transform: translateX(5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.terpene-card h3 {
+  color: #667eea;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.terpene-card p {
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+.high-terp-section {
+  margin-top: 30px;
+  padding: 20px;
+  background: #fff3cd;
+  border-radius: 10px;
+}
+
+.high-terp-section h3 {
+  color: #856404;
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.high-terp-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.high-terp-section li {
+  padding: 8px 0;
+  color: #856404;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .reference-guide {
+    padding: 20px;
+  }
+  
+  .terpene-card {
+    padding: 15px;
+  }
+  
+  .terpene-card h3 {
+    font-size: 1.2em;
+  }
+}

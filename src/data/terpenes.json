@@ -1,0 +1,143 @@
+{
+  "Myrcene": {
+    "aroma": "Earthy, musky, mango, clove",
+    "feelings": "Body-heavy relaxation, 'mellow,' sedative tilt",
+    "therapeutic": "Analgesic & anti-inflammatory (strong preclinical); sedative (preclinical/historical; mixed human data)",
+    "pairsBest": "β-Caryophyllene (adds body-calm depth), Linalool (smooths into full chill), Pinene (keeps things clear). Quick combos: 'heavy-but-clear' = myrcene + pinene; 'spa-night' = myrcene + linalool",
+    "herbAnalogs": "Hops (beer herb), Thyme, Lemongrass",
+    "menuItems": [
+      "Primo - Sungrown White Widow PR: myrcene, pinene, limonene",
+      "Sweetgrass Organic - 3.5g: α-pinene, β-myrcene, caryophyllene",
+      "Uncle Bob - Day Trippin PR: myrcene, β-caryophyllene, farnesene",
+      "Sassy Weed Co. - Wake N Flake PR: β-myrcene, β-caryophyllene, d-limonene (2.44% terps)",
+      "All Nations - Blackberry Pie PR: limonene, β-caryophyllene, myrcene",
+      "Woody Nelson - Flower (3.5g): d-limonene, β-myrcene, trans-nerolidol"
+    ],
+    "quickLine": "Mango/earthy; often the 'couchlock' helper in heavier cultivars",
+    "color": "#8B4513"
+  },
+  "Limonene": {
+    "aroma": "Bright citrus, lemon peel",
+    "feelings": "Uplift, 'clean head,' mood-brightening",
+    "therapeutic": "Anxiolytic/mood (some human signals; small human studies & recent limonene+THC study); antioxidant/anti-inflammatory (preclinical)",
+    "pairsBest": "Pinene (focus + uplift), Terpinolene (complex brightness), β-Caryophyllene (body + mood balance). Quick combos: 'sunny focus' = limonene + pinene; 'citrus calm' = limonene + caryophyllene",
+    "herbAnalogs": "Lemon peel, Orange peel, Juniper",
+    "menuItems": [
+      "Back Forty - Super Lemon Haze (Vape): limonene & terpinolene",
+      "Uncle Bob - Devil's Lettuce (PR): limonene, β-caryophyllene, nerolidol",
+      "All Nations - Blackberry Pie (PR): limonene, β-caryophyllene, myrcene",
+      "Happy Hour - Flower (1g): myrcene, caryophyllene, limonene",
+      "Woody Nelson Country Club - 33 Splitter Cured Resin (Vape): limonene, caryophyllene, linalool"
+    ],
+    "quickLine": "Lemon/citrus; mood-lift and energy vibes",
+    "color": "#FFD700"
+  },
+  "Linalool": {
+    "aroma": "Floral, lavender, soft spice",
+    "feelings": "Calm, soothing, 'exhale' vibes",
+    "therapeutic": "Anxiolytic & calming (systematic reviews & RCTs w/ lavender oil show benefit; formulation/route matters)",
+    "pairsBest": "Myrcene (deep relaxation combo), Limonene (calm + uplift balance), Bisabolol (floral spa duo). Quick combos: 'lavender dream' = linalool + myrcene; 'balanced calm' = linalool + limonene",
+    "herbAnalogs": "Lavender, Coriander seed, Basil (sweet/tulsi)",
+    "menuItems": [
+      "Sweetgrass - Organic Zest (PR): limonene, linalool, caryophyllene",
+      "Carmel - Animal Face Infused (PR): limonene, linalool, myrcene",
+      "All Nations - Stone House 'Mac Daddy' (PR): limonene, linalool, β-caryophyllene",
+      "Pistol & Paris - Pink Panties (PR): caryophyllene, farnesene, linalool",
+      "Tantalus - Pacific OG (PR): limonene, linalool, myrcene",
+      "Woody Nelson Country Club - 33 Splitter Cured Resin (Vape): limonene, caryophyllene, linalool"
+    ],
+    "quickLine": "Lavender/floral; calming/soothing, great for evening",
+    "color": "#9370DB"
+  },
+  "β-Caryophyllene": {
+    "aroma": "Pepper, clove, woody spice",
+    "feelings": "Body calm, 'grounded'",
+    "therapeutic": "CB2 agonist; anti-inflammatory & analgesic (robust preclinical; emerging translational interest)",
+    "pairsBest": "Humulene (classic spicy duo), Myrcene (body + sedation), Limonene (body-calm + mood). Quick combos: 'pepper power' = caryophyllene + humulene; 'balanced body' = caryophyllene + limonene",
+    "herbAnalogs": "Black pepper, Clove, Oregano",
+    "menuItems": [
+      "Uncle Bob - Devil's Lettuce (PR): limonene, β-caryophyllene, nerolidol",
+      "All Nations - Blackberry Pie (PR): limonene, β-caryophyllene, myrcene",
+      "Sassy Weed Co. - Wake N Flake (PR): β-myrcene, β-caryophyllene, d-limonene",
+      "Sassy Weed Co. - Dank Sinatra (PR): myrcene, pinene, β-caryophyllene (2.47% terps)",
+      "Sweetgrass Organic - Flower (3.5g): α-pinene, β-myrcene, caryophyllene"
+    ],
+    "quickLine": "Pepper/spice; only terp that binds CB2—think body-calm",
+    "color": "#DC143C"
+  },
+  "Pinene": {
+    "aroma": "Pine needles, rosemary, forest",
+    "feelings": "Alert, clear-headed, focus",
+    "therapeutic": "Anti-inflammatory, bronchodilatory, neuroprotective/cognition-support (preclinical and traditional evidence; limited human data)",
+    "pairsBest": "Limonene (clarity + uplift), Myrcene (clear-headed relaxation), Terpinolene (forest-fresh complexity). Quick combos: 'morning forest' = pinene + limonene; 'clear calm' = pinene + myrcene",
+    "herbAnalogs": "Pine needles, Rosemary, Sage",
+    "menuItems": [
+      "Primo - White Widow (PR): myrcene, pinene, limonene",
+      "Sassy Weed Co. - Dank Sinatra (PR): myrcene, pinene, β-caryophyllene",
+      "Station House - Northern Lights (PR): pinene, terpinolene, limonene",
+      "All Nations - Lemon Gelato (PR): β-myrcene, limonene, pinene",
+      "Sweetgrass Organic - Flower (3.5g): α-pinene, β-myrcene, caryophyllene"
+    ],
+    "quickLine": "Pine/forest; clarity/focus, can temper 'fog'",
+    "color": "#228B22"
+  },
+  "Humulene": {
+    "aroma": "Hoppy, woody, herbal (think hops/IPA)",
+    "feelings": "Dry, earthy finish; often pairs with BCP for 'quiet body'",
+    "therapeutic": "Anti-inflammatory (good preclinical; early translational/scoping evidence)",
+    "pairsBest": "β-Caryophyllene (dry herb duo), Pinene (forest-floor vibes), Myrcene (earthy depth). Quick combos: 'IPA chill' = humulene + caryophyllene; 'woodland walk' = humulene + pinene",
+    "herbAnalogs": "Hops (beer), Ginseng, Sage",
+    "menuItems": [
+      "Station House - Ghost Train Haze (PR): β-caryophyllene, humulene, terpinolene",
+      "Valhalla - Cosmic Cherry (28g): cedrene, humulene, carene",
+      "Good Supply - Blueberry Lights (PR): β-caryophyllene, β-myrcene, humulene",
+      "Spinach - Flower (7g): caryophyllene, humulene, limonene",
+      "Good Supply - Pineapple Express (PR): pinene, humulene, caryophyllene"
+    ],
+    "quickLine": "Hoppy/wood; dry, herbal… commonly rides with caryophyllene",
+    "color": "#D2691E"
+  },
+  "Terpinolene": {
+    "aroma": "Complex floral, piney, citrus with herbal notes",
+    "feelings": "Uplifting yet calming, balanced energy",
+    "therapeutic": "Antioxidant, anti-proliferative (preclinical); sedative potential in combination (early evidence)",
+    "pairsBest": "Limonene (bright uplift), Pinene (clear focus), Ocimene (floral boost). Quick combos: 'morning clarity' = terpinolene + limonene; 'forest spa' = terpinolene + pinene",
+    "herbAnalogs": "Nutmeg, Tea Tree, Cumin",
+    "menuItems": [
+      "Back Forty - Super Lemon Haze (Vape): limonene & terpinolene",
+      "Station House - Ghost Train Haze (PR): β-caryophyllene, humulene, terpinolene",
+      "Station House - Northern Lights (PR): pinene, terpinolene, limonene",
+      "Good Supply - Jean Guy (PR): terpinolene, β-caryophyllene, pinene"
+    ],
+    "quickLine": "Complex floral/pine; rare dominant terp with balanced uplift",
+    "color": "#E6E6FA"
+  },
+  "Ocimene": {
+    "aroma": "Sweet, herbaceous, citrus, tropical fruit",
+    "feelings": "Light, airy, uplifting, energizing",
+    "therapeutic": "Anti-inflammatory, antifungal, decongestant (preclinical); traditional respiratory support",
+    "pairsBest": "Limonene (citrus explosion), Terpinolene (floral harmony), Myrcene (tropical sweetness). Quick combos: 'tropical breeze' = ocimene + limonene; 'flower garden' = ocimene + terpinolene",
+    "herbAnalogs": "Mint, Parsley, Basil, Orchid",
+    "menuItems": [
+      "Spinach - Feelz (Vape): ocimene, terpinolene, limonene",
+      "Broken Coast - Amnesia Haze (PR): limonene, ocimene, β-caryophyllene",
+      "San Rafael '71 - Tangerine Dream (PR): myrcene, ocimene, pinene"
+    ],
+    "quickLine": "Sweet herb/tropical; light, airy uplift with fresh vibes",
+    "color": "#98FB98"
+  },
+  "Bisabolol": {
+    "aroma": "Soft floral, chamomile, light sweetness",
+    "feelings": "Gentle calm, soothing, relaxing without sedation",
+    "therapeutic": "Anti-inflammatory, analgesic, skin-soothing (preclinical & dermatological use); anxiolytic potential (early evidence)",
+    "pairsBest": "Linalool (double floral calm), Myrcene (deep relaxation), Limonene (balanced mood-lift). Quick combos: 'chamomile tea' = bisabolol + linalool; 'evening unwind' = bisabolol + myrcene",
+    "herbAnalogs": "Chamomile (German), Candeia tree bark",
+    "menuItems": [
+      "Broken Coast - Galiano (PR): bisabolol, β-caryophyllene, ocimene",
+      "Redecan - Wappa (PR): myrcene, bisabolol, β-caryophyllene",
+      "7ACRES - Craft Collective (PR): limonene, bisabolol, linalool"
+    ],
+    "quickLine": "Chamomile/floral; gentle soothing without heavy sedation",
+    "color": "#FFEFD5"
+  }
+}

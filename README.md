@@ -1,4 +1,23 @@
-# Getting Started with Create React App
+# 🌿 Terpene Flashcards - React App
+
+An interactive flashcard study application built with React for learning about cannabis terpenes. Perfect for preparing for interviews at Earth's Own Naturals or any cannabis retail position.
+
+## Features
+
+- **6 Study Modes:** Random Mix, Aroma Profile, Common Feelings, Therapeutic, Menu Items, Quick Lines
+- **Interactive Flashcards:** Click to flip cards and reveal answers
+- **Score Tracking:** Real-time correct/incorrect tracking with accuracy percentage
+- **Quick Reference Guide:** View all terpenes at a glance
+- **Responsive Design:** Works beautifully on desktop and mobile
+
+## Terpenes Covered
+
+1. **Myrcene** - Earthy/mango, relaxing, "couchlock" helper
+2. **Limonene** - Citrus, uplifting, mood-brightening
+3. **Linalool** - Lavender/floral, calming, soothing
+4. **β-Caryophyllene** - Pepper/spice, CB2 binding, body-calm
+5. **Pinene** - Pine/forest, focus, clarity
+6. **Humulene** - Hoppy/woody, dry, pairs with caryophyllene
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

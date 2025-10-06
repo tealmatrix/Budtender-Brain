@@ -1,0 +1,110 @@
+.level-progress {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.level-badge {
+  text-align: center;
+  min-width: 100px;
+}
+
+.level-number {
+  font-size: 2em;
+  font-weight: bold;
+  color: #667eea;
+  text-shadow: 2px 2px 4px rgba(102, 126, 234, 0.3);
+}
+
+.level-title {
+  font-size: 0.9em;
+  color: #666;
+  font-weight: 600;
+}
+
+.xp-bar-container {
+  flex: 1;
+}
+
+.xp-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.xp-to-next {
+  color: #999;
+  font-style: italic;
+}
+
+.xp-bar {
+  height: 25px;
+  background: #e0e0e0;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.xp-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  transition: width 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.xp-bar-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,0.3),
+    transparent
+  );
+  animation: shimmer 2s infinite;
+}
+
+.xp-bar-text {
+  color: white;
+  font-weight: bold;
+  font-size: 0.8em;
+  z-index: 1;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@media (max-width: 768px) {
+  .level-progress {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .level-badge {
+    min-width: auto;
+  }
+  
+  .xp-bar-container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,110 @@
+.streak-counter {
+  background: white;
+  padding: 15px 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.streak-counter.on-fire {
+  background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
+  box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+  animation: fireGlow 2s infinite;
+}
+
+.streak-main {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.streak-icon {
+  font-size: 2.5em;
+  animation: flicker 1.5s infinite;
+}
+
+.streak-counter.on-fire .streak-icon {
+  animation: fire 0.5s infinite alternate;
+}
+
+.streak-info {
+  flex: 1;
+}
+
+.streak-current {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+}
+
+.streak-counter.on-fire .streak-current,
+.streak-counter.on-fire .streak-best {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.streak-best {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.streak-message {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  animation: bounce 1s infinite;
+}
+
+@keyframes fireGlow {
+  0%, 100% {
+    box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+  }
+  50% {
+    box-shadow: 0 8px 35px rgba(255, 107, 107, 0.6);
+  }
+}
+
+@keyframes fire {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    transform: translateY(-5px) scale(1.1);
+  }
+}
+
+@keyframes flicker {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@media (max-width: 768px) {
+  .streak-counter {
+    padding: 12px 20px;
+  }
+  
+  .streak-icon {
+    font-size: 2em;
+  }
+  
+  .streak-current {
+    font-size: 1.2em;
+  }
+}
