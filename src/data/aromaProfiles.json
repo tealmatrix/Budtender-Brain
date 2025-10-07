@@ -1,0 +1,62 @@
+[
+  {
+    "id": "spicy-peppery",
+    "name": "Spicy / Peppery",
+    "emoji": "🌶️",
+    "likelyTerps": ["β-Caryophyllene (BCP)", "Humulene", "Clove/Eugenol notes"],
+    "quickRead": "Grounded body-calm, anti-'jitters,' pairs well with bright top notes",
+    "budtenderLine": "Spicy = BCP/Humulene → steady body base.",
+    "color": "#DC143C",
+    "pairingTips": "Add bright citrus (Limonene) for balanced uplift"
+  },
+  {
+    "id": "sweet-candy-tropical",
+    "name": "Sweet / Candy / Tropical",
+    "emoji": "🍬",
+    "likelyTerps": ["Limonene", "Ocimene", "Terpinolene", "Fruity esters"],
+    "quickRead": "Uplifted mood/energy, 'sparkly' head; balance with BCP if anxious",
+    "budtenderLine": "Sweet = Limonene/Ocimene/Terpinolene → bright; add BCP to ground.",
+    "color": "#FF69B4",
+    "pairingTips": "If customer feels anxious, pair with BCP for grounding"
+  },
+  {
+    "id": "sour-citrus-zest",
+    "name": "Sour / Citrus / Zest",
+    "emoji": "🍋",
+    "likelyTerps": ["Limonene", "Terpinolene", "Valencene"],
+    "quickRead": "Crisp, upbeat; can feel racy for sensitive folks → pair with BCP or Linalool",
+    "budtenderLine": "Sour = Limonene/Terpinolene; balance with BCP/Linalool.",
+    "color": "#FFD700",
+    "pairingTips": "For sensitive customers, add BCP or Linalool to calm racy effects"
+  },
+  {
+    "id": "earthy-musky-herbal",
+    "name": "Earthy / Musky / Herbal",
+    "emoji": "🌱",
+    "likelyTerps": ["Myrcene", "Humulene", "Nerolidol"],
+    "quickRead": "Heavier body, relaxing, sedative-leaning",
+    "budtenderLine": "Earthy = Myrcene/Humulene → heavier body, bedtime lane.",
+    "color": "#8B4513",
+    "pairingTips": "Add Pinene to reduce 'fog' if customer needs clarity"
+  },
+  {
+    "id": "floral",
+    "name": "Floral",
+    "emoji": "🌸",
+    "likelyTerps": ["Linalool", "Bisabolol"],
+    "quickRead": "Calm, soothing, 'exhale' vibes; nice evening option",
+    "budtenderLine": "Floral = Linalool/Bisabolol → calm & cozy.",
+    "color": "#9370DB",
+    "pairingTips": "Perfect for evening relaxation; pairs well with Myrcene for deeper calm"
+  },
+  {
+    "id": "pine-forest",
+    "name": "Pine / Forest",
+    "emoji": "🌲",
+    "likelyTerps": ["α-Pinene", "β-Pinene", "Terpinolene"],
+    "quickRead": "Clearer head, focus; great to tame myrcene fog",
+    "budtenderLine": "Pine = Pinene → clarity; balances heavy profiles.",
+    "color": "#228B22",
+    "pairingTips": "Use to add clarity to heavy/earthy profiles"
+  }
+]

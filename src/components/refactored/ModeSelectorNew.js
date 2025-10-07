@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ModeSelectorNew = ({ onModeSelect, onViewReference, onViewAchievements, onViewEffectSearch, currentMode, studyType, onStudyTypeChange }) => {
+const ModeSelectorNew = ({ onModeSelect, onViewReference, onViewAchievements, onViewEffectSearch, onViewAromaProfile, currentMode, studyType, onStudyTypeChange }) => {
   const modes = [
     { id: 'random', icon: '🎲', label: 'Random Mix' },
     { id: 'aroma', icon: '👃', label: 'Aroma Profile' },
@@ -63,6 +63,13 @@ const ModeSelectorNew = ({ onModeSelect, onViewReference, onViewAchievements, on
         </button>
         <button className="btn btn-primary" onClick={onViewEffectSearch}>
           🔍 Search by Effect
+        </button>
+        <button className="btn btn-secondary" onClick={onViewAromaProfile}
+          style={{
+            background: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+            border: 'none'
+          }}>
+          🌺 Aroma Profiles
         </button>
         <button className="btn btn-success" onClick={onViewAchievements}>
           🏆 Achievements

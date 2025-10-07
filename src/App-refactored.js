@@ -13,6 +13,7 @@ import QuizView from './components/refactored/QuizView';
 import ReferenceView from './components/refactored/ReferenceView';
 import AchievementsView from './components/refactored/AchievementsView';
 import EffectSearchView from './components/refactored/EffectSearchView';
+import AromaProfileView from './components/refactored/AromaProfileView';
 import AchievementPopup from './components/AchievementPopup';
 import XPGainNotification from './components/XPGainNotification';
 
@@ -23,6 +24,7 @@ const VIEWS = {
   REFERENCE: 'reference',
   ACHIEVEMENTS: 'achievements',
   EFFECT_SEARCH: 'effect_search',
+  AROMA_PROFILE: 'aroma_profile',
   MODE_SELECT: 'mode_select'
 };
 
@@ -257,6 +259,7 @@ function App() {
                 onViewReference={() => switchView(VIEWS.REFERENCE)}
                 onViewAchievements={() => switchView(VIEWS.ACHIEVEMENTS)}
                 onViewEffectSearch={() => switchView(VIEWS.EFFECT_SEARCH)}
+                onViewAromaProfile={() => switchView(VIEWS.AROMA_PROFILE)}
                 currentMode={currentMode}
                 studyType={studyType}
                 onStudyTypeChange={handleStudyTypeChange}
@@ -322,6 +325,15 @@ function App() {
             <div className="view-section">
               <EffectSearchView
                 terpenes={terpenes}
+                onBack={goBack}
+              />
+            </div>
+          )}
+          
+          {/* Aroma Profile View */}
+          {currentView === VIEWS.AROMA_PROFILE && (
+            <div className="view-section">
+              <AromaProfileView
                 onBack={goBack}
               />
             </div>
