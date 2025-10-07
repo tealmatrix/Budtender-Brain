@@ -47,5 +47,37 @@
       "use": "Pine calm for mental clarity and relaxation; 'pine calm' combo",
       "herbAnalogs": "Rosemary, Hops, Thyme"
     }
+  ],
+  "Body Calm & Mind Quiet": [
+    {
+      "name": "Ghost Train Haze – Station House PR",
+      "dominantTerps": ["Caryophyllene", "Humulene", "Terpinolene"],
+      "profile": "Spicy, hoppy, with complex floral notes for grounded calm",
+      "use": "Body relaxation with mental clarity and quiet focus"
+    },
+    {
+      "name": "Spinach – 7g Flower",
+      "dominantTerps": ["Caryophyllene", "Humulene", "Limonene"],
+      "profile": "Peppery-hoppy with citrus brightness for balanced calm",
+      "use": "Grounding body calm with uplifted, clear mind"
+    },
+    {
+      "name": "Pineapple Express – Good Supply PR",
+      "dominantTerps": ["Pinene", "Humulene", "Caryophyllene"],
+      "profile": "Pine-forward with earthy spice for alert body relaxation",
+      "use": "Clear-headed body calm; 'forest chill' effect"
+    },
+    {
+      "name": "Blueberry Lights – Good Supply PR",
+      "dominantTerps": ["Caryophyllene", "Myrcene", "Humulene"],
+      "profile": "Sweet earthy with peppery-hoppy depth for deep calm",
+      "use": "Mellow body relaxation with quiet, peaceful mind"
+    },
+    {
+      "name": "Sungrown Purple Kush – Primo PR",
+      "dominantTerps": ["Myrcene", "Caryophyllene", "Humulene"],
+      "profile": "Classic earthy-musky with herbal spice for full-body ease",
+      "use": "Deep body calm with gentle mental quietness"
+    }
   ]
 }

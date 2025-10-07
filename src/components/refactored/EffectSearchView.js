@@ -12,6 +12,7 @@ const EffectSearchView = ({ terpenes, onBack }) => {
     { label: '🎯 Focus/Clarity', keywords: ['focus', 'clear', 'alert', 'cognition', 'mental', 'sharp'] },
     { label: '💪 Body Relief', keywords: ['body', 'pain', 'inflammation', 'analgesic', 'muscle', 'ache'] },
     { label: '😌 Anxiety/Stress', keywords: ['anxiety', 'stress', 'anxiolytic', 'calm', 'nervous', 'worry'] },
+    { label: '🧘 Body Calm & Mind Quiet', keywords: ['body calm', 'mind quiet', 'grounded', 'balanced body', 'clear calm'] },
     { label: '⚡ Energy/Daytime', keywords: ['energy', 'daytime', 'morning', 'wake', 'active', 'energiz'] },
     { label: '🧘 Balanced', keywords: ['balanced', 'gentle', 'moderate', 'middle', 'even'] }
   ];
@@ -65,6 +66,9 @@ const EffectSearchView = ({ terpenes, onBack }) => {
     }
     if (lowerQuery.includes('anxiety') || lowerQuery.includes('stress')) {
       return { category: 'Anxiety/Stress', strains: strainsByEffect['Anxiety/Stress'] || [] };
+    }
+    if (lowerQuery.includes('body calm') || lowerQuery.includes('mind quiet') || lowerQuery.includes('grounded')) {
+      return { category: 'Body Calm & Mind Quiet', strains: strainsByEffect['Body Calm & Mind Quiet'] || [] };
     }
     return { category: null, strains: [] };
   };
